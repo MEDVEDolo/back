@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+    {% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Угадайте число</title>
+    <link rel="stylesheet" href="{% static 'core/css/bootstrap.min.css' %}">
+</head>
+<body class="bg-dark">
+    <h1 class="text-light text-center">Магическое число</h1>
+    <p class="text-light text-center">{{ result }}</p>
+    <form method="post" class="d-flex flex-column gap-2 mx-auto my-1 " style="max-width: 200px;">{% csrf_token %}
+        <input type="number" placeholder="Угадай число" name="number">
+        <button type="sumbit">Угадать</button>
+    </form>
+</body>
+</html>

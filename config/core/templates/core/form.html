@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Формы практика</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+</head>
+<body class="bg-dark">
+    <h1 class="text-center text-light my-3">Регистрация</h1>
+    <form action="" method="get" class="d-flex flex-column gap-2 mx-auto" style="max-width: 300px;">
+        <input type="text" placeholder="Введите текс" name="text">
+        <input type="email" placeholder="Введите почту" name="email"> 
+        <input type="password" placeholder="Пароль" name="pass"> 
+        <input type="password" placeholder="Повторите пароль" name="pass_repeat"> 
+
+        <div class="text-secondary d-flex gap-2 justify-content-center">
+            <span>Мужчина</span>  
+            <input class="form-check-imput" type="radio" name="gender" id="male" value="male">                                                           
+            <input class="form-check-imput" type="radio" name="gender" id="female" value="female">  
+            <span>Женщина</span>
+        </div>
+        <button type="submit" style="max-width: 90%; min-width: 200px;"
+        class="btn btn-primary mx-auto my-2">Подтвердить</button>                                                       
+    </form>                                                         
+</html>
